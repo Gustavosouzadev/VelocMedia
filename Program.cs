@@ -7,8 +7,7 @@ namespace VelocMedia
         static void Main(string[] args)
         {
             Console.Clear();
-
-            string D, T;
+            
             int Velo, Distancia, Tempo;
 
             Console.WriteLine("----------------------------");
@@ -17,12 +16,9 @@ namespace VelocMedia
             Console.WriteLine("");
 
             Console.Write("Distancia Percorrida (m): ");
-            D = Console.ReadLine();
+            Distancia = Convert.ToInt32 (Console.ReadLine());
             Console.Write("Tempo Gasto (s): ");
-            T = Console.ReadLine();
-
-            Distancia = Convert.ToInt32(D);
-            Tempo = Convert.ToInt32(T);
+            Tempo = Convert.ToInt32 (Console.ReadLine()); 
 
             Velo = (Distancia / Tempo);
 
